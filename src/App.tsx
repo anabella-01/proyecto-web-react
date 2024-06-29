@@ -1,14 +1,16 @@
+import {
+  Hero,
+  Footer,
+  Nav,
+  Projects,
+  Services,
+  Strategy,
+  Team,
+  Testimonials,
+  FAQs
+} from "./components";
 
-import {Hero} from "./components/Hero";
-import {Nav} from "./components/Nav";
-import {Services} from "./components/Services";
-import {Team} from "./components/Team";
-import {Strategy} from "./components/Strategy";
-import {Projects} from "./components/Projects";
-import {Testimonials} from "./components/Testimonials";
-import {Faqs} from "./components/FAQs";
-import {Footer} from "./components/Footer";
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
       <Team/>
       <Projects />
       <Testimonials />
-      <Faqs />
+      <FAQs />
       </main>
       <Footer/>
     </>

@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import {Testimonial} from "./Testimonial";
-import { ITestimonial } from "../types/testimonial";
+import { ITestimonial } from "../../types/testimonial";
+
 
 export function Testimonials(){
     
@@ -13,10 +14,10 @@ export function Testimonials(){
     })
 
     return(
-        <section className="testimonials">
+        <section className="bg-light-grey py-[70px] px-0 ">
         <div className="container">
-            <h2>Don't take our word for it. See what customers are saying about us.</h2>
-        <div className="testimonials-list">
+            <h2 className="max-w-[670px] mt-0 mx-auto mb-12 text-center">Don't take our word for it. See what customers are saying about us.</h2>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((item: ITestimonial) =>(
                 <Testimonial key={item.id} {...item} />
             ))}

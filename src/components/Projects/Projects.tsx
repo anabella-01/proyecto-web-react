@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react";
 import {Project} from "./Project";
-import {IProject} from "../types/project";
+import {IProject} from "../../types/project";
+
 
 export function Projects(){
 
@@ -13,9 +14,11 @@ export function Projects(){
     },[]);
 
     return(
-        <section className="projects">
-        <h2>Check out some of our awesome projects with creative ideas and great design.</h2>
-        <div className="container projects-container">
+        <section className="pt-12 px-0 pb-24">
+        <h2 className="mt-0 mx-auto mb-12 max-w-[780px] text-center">
+            Check out some of our awesome projects with creative ideas and great design.
+        </h2>
+        <div className="container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
             { project.map((project:IProject)=>(
               <Project key={project.id} {...project} />  
 
