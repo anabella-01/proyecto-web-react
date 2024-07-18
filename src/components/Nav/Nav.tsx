@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo/logo.svg";
 import { useState } from "react";
 
 export function Nav(){
-
+    
     const [isOpen,setIsOpen] = useState<boolean>(false);
     const toggleMenu = ()=> setIsOpen(!isOpen);
 

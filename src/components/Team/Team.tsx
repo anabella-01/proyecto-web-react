@@ -5,6 +5,7 @@ import { Teammate } from "../Team/Teammate";
 import { useEffect,useState } from "react";
 import { ITeammate } from "../../types/teammate";
 
+
 export function Team(){
 
     const [teammates, setTeammates]= useState([]);
