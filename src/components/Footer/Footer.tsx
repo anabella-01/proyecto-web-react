@@ -2,8 +2,8 @@ import footerLogo from "../../assets/images/logo/logo-light.svg";
 import { Button } from "../Button/Button";
 
 export function Footer(){
-
     return(
+        
     <footer className="bg-heading-color md:px-14 p-5 max-w-screen-3xl mx-auto py-10">
         <div className="grid grid-cols-1 space-y-8 md:grid-cols-2  md:justify-items-end container mx-auto lg:mb-10 lg:items-center">
             <div>
@@ -18,7 +18,7 @@ export function Footer(){
         </div>
             <hr className="text-white mt-10"/>
 
-        <div className="grid grid-cols-1 mt-10 lg:grid-cols-4 md:space-x-4">
+        <div className="grid grid-cols-1 mt-10 lg:grid-cols-4">
             <div className="flex-col space-y-4 ">
             <div className="mt-3 cursor-pointer">
                 <img src={footerLogo} alt="logo" />
@@ -31,7 +31,7 @@ export function Footer(){
             </div>
 
 
-            <div className="py-5 space-y-2">
+            <div className="space-y-4  mt-5 md:mt-0 ">
             <h3 className="font-semibold text-white">Get in Touch</h3>
             <p className="text-footer-p">Moonshine St. 14/05
             Light City, London,
